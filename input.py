@@ -1,3 +1,4 @@
+a = input()
 s = input("Enter a string: ")
 x = int(input("Enter an int: "))
 l = input("Enter one or more space sperated strings: ").split()
