@@ -29,3 +29,7 @@ for number, letter, value in zip(numbers, letters, values):
   print(number, letter, value)
 my_dict = dict(zip(numbers, letters))
 
+#flatten list of lists
+list_of_lists = [[1, 2], [3, 4], [5, 6, 7]]
+my_list = [item for list_item in list_of_lists for item in list_item]
+
