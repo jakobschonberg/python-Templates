@@ -13,13 +13,12 @@ sorted_numbers = sorted(numbers, key = lambda number: mod4(number)) #sort with l
 
 first, *rest, last = numbers
 doubled_numbers = [2 * numbers for number in numbers]
-evens = filter(lambda x: x % 2 == 0, numbers)
+doubled_numbers = list(map(lambda number: number * 2, numbers))
+evens = list(filter(lambda x: x % 2 == 0, numbers))
 evens = [number for number in numbers if number % 2 == 0]
 set_evens_mod3 = {number % 3 for number in numbers if number % 2 == 0}
 squares = {number: number ** 2 for number in numbers}
 doubled_squares = {key: value * 2 for key, value in squares.items()}
-fruits = ['apple', 'banana', 'cherry']
-lengths = list(map(lambda x: len(x), fruits))
  
 
 #generators:
